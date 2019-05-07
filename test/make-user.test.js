@@ -1,6 +1,6 @@
-
 const test = QUnit.test;
 import makeUser from '../src/make-user.js';
+
 QUnit.module('make user');
 
 test('create user object from form data', (assert) => {
