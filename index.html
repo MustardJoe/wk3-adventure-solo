@@ -12,6 +12,48 @@
     <header>
         <h1>To Boldly Go...</h1>
     </header>
+
+    <p>
+        You are a newly minted Ensign in Star Fleet.  As the head of the graduating 
+        Star Fleet Acadamy class, you can pick which Captain's ship you will serve 
+        aboard.
+    </p>
     
+    <form id="user-sign-up">
+        <p class="text-prompt">
+            <label for="name">Enter Your Name, Ensign:</label>
+            <input id="name" name="name" required>
+        </p>
+
+        <fieldset>
+            <legend>Choose Your Captain:</legend>
+            <p id="avatars">
+                <div class="select-choice">
+                    <label >
+                        <input type="radio" name="captain" required value="janeway" selected>
+                        <img class="choiceimg" src="assets/captainjaneway.png">
+                        <br>Capt. Janeway
+                    </label>
+                </div>
+                <div class="select-choice">
+                    <label >
+                        <input type="radio" name="captain" required value="sisko">
+                        <img class="choiceimg" src="assets/captainsisko.png">
+                        <br>Capt. Sisko
+                    </label>
+                </div>
+                <div class="select-choice">
+                    <label >
+                        <input type="radio" name="captain" required value="kirk">
+                        <img class="choiceimg" src="assets/captainkirk.png">
+                        <br>Capt. Kirk
+                    </label>    
+                </div>
+            </p>
+        </fieldset>
+
+        <button>Engage!</button>
+    </form>
+
 </body>
 </html>
