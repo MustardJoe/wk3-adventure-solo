@@ -6,18 +6,18 @@ function makeUser(formData) {
     };
         
     if(user.captain === 'janeway') {
-        user.tough = 'seven';
-        user.vulcan = 'tuvoc';
+        user.tough = 'Seven';
+        user.vulcan = 'Tuvoc';
     }
 
     if(user.captain === 'sisko') {
-        user.tough = 'warf';
+        user.tough = 'Warf';
         user.vulcan = null;
     }
 
     if(user.captain === 'kirk') {
-        user.tough = 'kirk';
-        user.vulcan = 'spok';
+        user.tough = 'Kirk';
+        user.vulcan = 'Spok';
     }
 
     return user;
