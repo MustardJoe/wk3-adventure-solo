@@ -12,8 +12,8 @@ test('create user object from form data', (assert) => {
     const expected = {
         name: 'Jerry',
         captain: 'janeway',
-        tough: 'seven',
-        vulcan: 'tuvoc',
+        tough: 'Seven',
+        vulcan: 'Tuvoc',
         dilithium: 10,
     };
 
