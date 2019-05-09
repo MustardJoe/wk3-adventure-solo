@@ -1,3 +1,5 @@
+import questData from './quest/quest-data.js'
+
 const api = {
     // Used by testing to control 
     // where API saves data
@@ -12,6 +14,9 @@ const api = {
         if(!json) return null;
         const user = JSON.parse(json);
         return user;
+    },
+    getQuests() {
+        return questData;
     }
 };
 
