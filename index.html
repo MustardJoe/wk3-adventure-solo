@@ -20,39 +20,38 @@
     </p>
     
     <form id="user-sign-up">
-        <p class="text-prompt">
+        <div class="text-prompt">
             <label for="name">Enter Your Name, Ensign:</label>
             <input id="name" name="name" required>
-        </p>
+        </div>
 
         <fieldset>
             <legend>Choose Your Captain:</legend>
-            <p id="avatars">
-                <div class="select-choice">
-                    <label >
-                        <input type="radio" name="captain" required value="janeway" selected>
-                        <img class="choiceimg" src="assets/captainjaneway.png">
-                        <br>Capt. Janeway
-                    </label>
-                </div>
-                <div class="select-choice">
-                    <label >
-                        <input type="radio" name="captain" required value="sisko">
-                        <img class="choiceimg" src="assets/captainsisko.png">
-                        <br>Capt. Sisko
-                    </label>
-                </div>
-                <div class="select-choice">
-                    <label >
-                        <input type="radio" name="captain" required value="kirk">
-                        <img class="choiceimg" src="assets/captainkirk.png">
-                        <br>Capt. Kirk
-                    </label>    
-                </div>
-            </p>
+            <div class="select-choice">
+                <label >
+                    <input type="radio" name="captain" required value="janeway" selected>
+                    <img class="choiceimg" src="assets/captainjaneway.png">
+                    <br>Capt. Janeway
+                </label>
+            </div>
+            <div class="select-choice">
+                <label >
+                    <input type="radio" name="captain" required value="sisko">
+                    <img class="choiceimg" src="assets/captainsisko.png">
+                    <br>Capt. Sisko
+                </label>
+            </div>
+            <div class="select-choice">
+                <label >
+                    <input type="radio" name="captain" required value="kirk">
+                    <img class="choiceimg" src="assets/captainkirk.png">
+                    <br>Capt. Kirk
+                </label>    
+            </div>
         </fieldset>
-
-        <button>Engage!</button>
+        <div class="button-div">
+            <button>Engage!</button>
+        </div>
     </form>
     <script type="module" src="src/event-listener.js"></script>
 </body>

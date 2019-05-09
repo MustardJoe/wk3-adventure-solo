@@ -20,7 +20,7 @@ header {
 
 fieldset {
     width: 750px;
-    margin:auto;
+    display: flex;
 }
 
 button {
@@ -32,6 +32,11 @@ button {
     font-family: 'Share Tech Mono', monospace;
 }
 
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
 .choiceimg {
     width: 200px;
 }
@@ -41,16 +46,13 @@ button {
     margin-right: 24px;
 }
 
-other {
-    background-color: midnightblue;
-}
-
 #home-para {
     width: 750px;
     margin: 25px;
     font-size: 1.2em;
 }
 
-#avatars {
-    display: inline;
+other {
+    background-color: midnightblue;
 }
+
