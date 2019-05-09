@@ -5,7 +5,7 @@ function createQuestLink(quest) {
 
     const searchParams = new URLSearchParams();
     searchParams.set('id', quest.id);
-    link.href = 'quest.html?' + searchParams.toString();
+    link.href = './src/quest/quest.html?' + searchParams.toString();
 
     link.textContent = quest.title;
 

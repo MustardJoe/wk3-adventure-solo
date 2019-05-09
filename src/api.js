@@ -1,4 +1,4 @@
-import questData from './quest/quest-data.js'
+import questData from './quest/quest-data.js';
 
 const api = {
     // Used by testing to control 
