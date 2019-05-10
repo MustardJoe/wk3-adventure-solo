@@ -38,6 +38,6 @@ choiceForm.addEventListener('submit', function(event) {
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
     
-    //api.saveUser(scoreQuest(user, choice, quest)); 
+    //api.getUser(scoreQuest(user, choice, quest)); 
     //loadProfile();
 });

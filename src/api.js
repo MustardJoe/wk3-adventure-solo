@@ -6,7 +6,7 @@ const api = {
     // where API saves data
     storage: localStorage,
     // Methods for reading and saving data
-    signUp(user) {
+    saveUser(user) {
         const json = JSON.stringify(user);
         api.storage.setItem('user', json);
     },

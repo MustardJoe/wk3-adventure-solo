@@ -8,16 +8,19 @@ function makeUser(formData) {
     if(user.captain === 'janeway') {
         user.tough = 'Seven';
         user.vulcan = 'Tuvoc';
+        user.hasVulcan = true;
     }
 
     if(user.captain === 'sisko') {
         user.tough = 'Warf';
         user.vulcan = null;
+        user.hasVulcan = false;
     }
 
     if(user.captain === 'kirk') {
         user.tough = 'Kirk';
         user.vulcan = 'Spok';
+        user.hasVulcan = true;
     }
 
     return user;
