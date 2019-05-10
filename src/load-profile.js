@@ -21,7 +21,7 @@ function loadProfile() {
     } else {
         vulcan.textContent = user.vulcan;
     }
-    tough.textContent = user.tought;
+    tough.textContent = user.tough;
 }
 
 export default loadProfile;

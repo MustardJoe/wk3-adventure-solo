@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pick Your Away Missions</title>
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../map/map.css">
+    <title>Away Mission</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src//quest/quest.css">
 </head>
 <body>
     <header>
@@ -14,20 +14,6 @@
     </header>
             
     <main> 
-        <h2 id="title"></h2>
-        <div>
-            <img id="image">
-        </div>
-        <p id="description"></p>
-        <form id="choice-form">
-            <p id="choices"></p>
-            <button>Choose</button>
-        </form>
-        <section id="result" class="hidden">
-            <p id="result-description"></p>
-            <a href="../../map.html">Return to ship</a>
-        </section>
-    
         <div class="profile">
             <ul>
                 <li>
@@ -52,9 +38,26 @@
                 </li>
             </ul>
         </div>
+        
+        <div class="quest-div">
+            <h2 id="title"></h2>
+            <div>
+                <!-- <img id="image"> -->
+            </div>
+            <p id="description"></p>
+            <form id="choice-form">
+                <p id="choices"></p>
+                <button>Choose</button>
+            </form>
+            <section id="result" class="hidden">
+                <p id="result-description"></p>
+                <a href="./map.html">Return to ship</a>
+            </section>
+        </div>
+    
     
     </main>
 
-    
+    <script type="module" src="./src/quest/quest.js"></script>    
 </body>
 </html>

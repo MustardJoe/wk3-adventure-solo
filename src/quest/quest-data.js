@@ -1,6 +1,6 @@
 const tellatrites = {
     id: 'tellarites',
-    title: 'Conflict between the Tellarite and the Andorians',
+    title: 'Conflict between the Tellarites and the Andorians',
     //image: 'monsters.jpg',  find appropriate pic
     description: `
     The federation has been asked to help mediate a conflict between the Tellarites 
@@ -13,7 +13,7 @@ const tellatrites = {
         description: 'Trade some of your dilithium',
         result: `
              The Tellarites don't actually care that much about the mine, they simply
-             want to save face.  Aptly reading th situation, you trade the Tellarites
+             want to save face.  Aptly reading the situation, you trade the Tellarites
             some of your dilithium, and they agree to let the Andorians continue to 
             run the mine.
         `,

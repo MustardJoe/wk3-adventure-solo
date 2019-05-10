@@ -1,4 +1,5 @@
 import questData from './quest/quest-data.js';
+import findById from './find-by-id.js';
 
 const api = {
     // Used by testing to control 
@@ -17,7 +18,10 @@ const api = {
     },
     getQuests() {
         return questData;
-    }
+    },
+    getQuest(id) {
+        return findById(questData, id);
+    },
 };
 
 export default api;
