@@ -2,6 +2,7 @@ import loadProfile from '../load-profile.js';
 import createChoice from '../create-choice.js';
 import api from '../api.js';
 import findById from '../find-by-id.js';
+import dilithiumUpdate from './dilithium-update.js';
 
 loadProfile();
 
@@ -33,11 +34,14 @@ choiceForm.addEventListener('submit', function(event) {
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('radioButtons');
     const choice = findById(quest.choices, choiceId);
+    
 
+    dilithiumUpdate(user, choice.dilithium);
+    api.saveUser(user);
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
     
     //api.getUser(scoreQuest(user, choice, quest)); 
-    //loadProfile();
+    loadProfile();
 });
