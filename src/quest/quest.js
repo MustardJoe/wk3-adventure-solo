@@ -3,6 +3,7 @@ import createChoice from '../create-choice.js';
 import api from '../api.js';
 import findById from '../find-by-id.js';
 import dilithiumUpdate from './dilithium-update.js';
+import vulcanTest from './has-vulcan.js';
 
 loadProfile();
 
@@ -34,8 +35,12 @@ choiceForm.addEventListener('submit', function(event) {
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('radioButtons');
     const choice = findById(quest.choices, choiceId);
-    
+    const vulcanNeeded = choice.vulcanNeed;
+    const vulcanHave = user.hasVulcan;
+    //const vulcanNeed = findById(quest.choices)
+    console.log(user.hasVulcan);
 
+    vulcanTest(vulcanNeeded, vulcanHave);
     dilithiumUpdate(user, choice.dilithium);
     api.saveUser(user);
     choiceForm.classList.add('hidden');

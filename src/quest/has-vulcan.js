@@ -1,21 +1,10 @@
-// function vulcanNeed() {
-    //     for(let i = 0; i < quests.length; i++) {
-        
-        //         for(let index = 0; index < quests[i].choices.length; index++) {
-            //             console.log(quests[i].choices[index].vulcanNeed);
-            //             questNeedsVulcan = 0;
-            //         }
-            
-            
-            
-            //     }
-            //     if(questNeedsVulcan === true) {}
-            // }
-function dilithiumUpdate(dilithiumAmount) {
-    if(dilithiumAmount !== 0) {
-        user.dilithium += dilithiumAmount;
+function vulcanTest(vulcanNeeded, vulcanHave) {
+    if(vulcanNeeded && !vulcanHave) {
+        console.log('you died because of poor planning'); //change what this does when i add ending page
     }
-    return user;
+    else {
+        return;
+    }
 }
 
-export default dilithiumUpdate;
+export default vulcanTest;

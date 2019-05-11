@@ -1,5 +1,6 @@
 import quests from '../src/quest/quest-data.js';
 import api from '../src/api.js';
+import dilithiumUpdate from '../src/quest/dilithium-update.js';
 
 const test = QUnit.test;
             
@@ -29,11 +30,15 @@ test('kills you if you choose vulcan but dont have one', (assert) => {
 
 test('updates dilithium', (assert) => {
     // arrange - call data from form, set up expected data
-   const user = api.getUser();
+    const user = {
+        dilithium: 20,
+    };
+    const someDilithium = 10;
+    const expected = 30;
                            
     // act - run input from 'user' through function
-    
-
+    const updatedUser = dilithiumUpdate(user, someDilithium);    
+    const actual = updatedUser.dilithium;
     // assert
-    assert.equal(result, 'dead');
+    assert.equal(actual, expected);
 });
