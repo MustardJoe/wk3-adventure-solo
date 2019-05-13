@@ -37,8 +37,6 @@ choiceForm.addEventListener('submit', function(event) {
     const choice = findById(quest.choices, choiceId);
     const vulcanNeeded = choice.vulcanNeed;
     const vulcanHave = user.hasVulcan;
-    //const vulcanNeed = findById(quest.choices)
-    console.log(user.hasVulcan);
 
     vulcanTest(vulcanNeeded, vulcanHave);
     dilithiumUpdate(user, choice.dilithium);
