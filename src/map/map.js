@@ -1,25 +1,19 @@
 import api from '../api.js';
+import loadProfile from '../load-profile.js';
+import createQuestLink from '../quest/create-quest-link.js';
 
-//getting our dom eliments
-const name = document.getElementById('name');
-const avatar = document.getElementById('avatar');
-const dilithium = document.getElementById('dilithium');
-const vulcan = document.getElementById('vulcan');
-const tough = document.getElementById('tough');
+loadProfile();
 
-const user = api.getUser();
+const quests = api.getQuests();
+// const user = api.getUser();
+const section = document.getElementById('missions');
 
-if(!user) {
-    // no user? go back to sign up:
-    window.location = './'; 
+for(let i = 0; i < quests.length; i++) {
+    const quest = quests[i];
+    const link = createQuestLink(quest);
+    section.appendChild(link);
+    
+    // if(user.completed[quest.id]) {
+    //     link.classList.add('completed');
+    // }  add this back in when completed quest stuff is ready
 }
-
-avatar.src = '../../assets/captain' + user.captain + '.png';
-name.innerText = user.name;
-dilithium.innerText = user.dilithium;
-if(user.vulcan === null) {
-    vulcan.innerText = 'N/A';
-} else {
-    vulcan.innerText = user.vulcan;
-}
-tough.innerText = user.tough;

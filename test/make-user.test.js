@@ -14,6 +14,7 @@ test('create user object from form data', (assert) => {
         captain: 'janeway',
         tough: 'Seven',
         vulcan: 'Tuvoc',
+        hasVulcan: true,
         dilithium: 10,
     };
 

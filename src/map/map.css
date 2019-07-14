@@ -2,6 +2,10 @@ li {
     margin-bottom: 15px;
 }
 
+a {
+    margin: 20px;
+}
+
 .profile {
     float: right;
     border: 3px solid #d5d5f6;
@@ -10,4 +14,11 @@ li {
 
 #avatar {
     width: 200px;
+}
+
+#missions {
+    width: 500px;
+    font-size: 30px;
+    background-color: #d5d5f6;
+    margin-left: 25px;
 }

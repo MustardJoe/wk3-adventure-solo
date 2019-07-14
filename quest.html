@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>...Where No One Has Gone Before...</title>
+    <title>Away Mission</title>
     <link rel="stylesheet" href="./src/main.css">
-    <link rel="stylesheet" href="./src/map/map.css">
+    <link rel="stylesheet" href="./src//quest/quest.css">
 </head>
 <body>
     <header>
-        <h1>
-            Star Date 46379.1
-        </h1>
+        <h1>Away Mission</h1>
     </header>
-
-    <section id="missions"></section>
-
-    <section>
+            
+    <main> 
         <div class="profile">
             <ul>
                 <li>
@@ -42,8 +38,26 @@
                 </li>
             </ul>
         </div>
-    </section>
+        
+        <div class="quest-div">
+            <h2 id="title"></h2>
+            <div>
+                <!-- <img id="image"> -->
+            </div>
+            <p id="description"></p>
+            <form id="choice-form">
+                <p id="choices"></p>
+                <button>Choose</button>
+            </form>
+            <section id="result" class="hidden">
+                <p id="result-description"></p>
+                <a href="./map.html">Return to ship</a>
+            </section>
+        </div>
     
-    <script type="module" src="./src/map/map.js"></script>
+    
+    </main>
+
+    <script type="module" src="./src/quest/quest.js"></script>    
 </body>
 </html>
