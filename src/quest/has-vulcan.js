@@ -2,7 +2,9 @@
 //to make sure you have one
 function vulcanTest(vulcanNeeded, vulcanHave) {
     if(vulcanNeeded && !vulcanHave) {
-        console.log('you died because of poor planning'); //change what this does when i add ending page
+        
+        let dead;
+        return dead; //change what this does when i add ending page
     }
     else {
         return;
