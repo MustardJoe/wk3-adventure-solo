@@ -1,5 +1,5 @@
 import quests from '../src/quest/quest-data.js';
-import api from '../src/api.js';
+// import api from '../src/api.js';
 import dilithiumUpdate from '../src/quest/dilithium-update.js';
 
 const test = QUnit.test;
