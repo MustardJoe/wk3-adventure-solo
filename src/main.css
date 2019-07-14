@@ -1,4 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
 body {
-    background-color: midnightblue;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
     color: #d5d5f6;
+    text-align: center;
+    width: 900px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    margin-bottom: 50px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+fieldset {
+    width: 750px;
+    margin:auto;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    background: #d5d5f6;
+    font-size: 1.5em;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.choiceimg {
+    width: 200px;
+}
+
+.select-choice {
+    float: left;
+    margin-right: 24px;
+}
+
+other {
+    background-color: midnightblue;
+}
+
+#home-para {
+    width: 750px;
+    margin: 25px;
+    font-size: 1.2em;
+}
+
+#avatars {
+    display: inline;
 }
