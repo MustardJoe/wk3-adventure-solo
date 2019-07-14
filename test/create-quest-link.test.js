@@ -13,7 +13,7 @@ test('creates correct link html', function(assert) {
         title: 'Conflict between the Tellarite and the Andorians',
     };
 
-    const expected = 'http://127.0.0.1:5500/test/quest.html?id=tellarites';
+    const expected = 'http://localhost:5500/test/quest.html?id=tellarites';
 
     //Act 
     // Call the function you're testing and set the result to a const
